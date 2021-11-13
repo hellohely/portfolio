@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="sv-SE">
+
+<head>
+  <meta charset="utf-8">
+  <title>Henrietta Lybeck - Front End Developer</title>
+
+  <meta name="author" content="Henrietta Lybeck">
+  <meta name="description" content="En presentation av mig, mina kunskaper, min portfolio och erfarenheter. Välkommen!">
+  <meta name="keywords" content="Front End Developer, Web Development, HTML, CSS, JavaScript, Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Henrietta Lybeck - Front End Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header>
+    
+    <figure class="logotype">
+      <img class="henrietta" width="100" height="100" src="img/HLlogotype.png" alt="">
+    </figure>
+
+    <nav>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <div class="menu">
+          <ul>
+            <li><a href="#hello">Hej!</a></li>
+            <li><a href="#about-me">Om mig</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#work-experience">Arbetslivs&shy;erfarenhet</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+  </header>
+
+  <main>
+
+    <section id="hello">
+      <div class="container">
+        <h1>Hej!</h1> <figure class="hand"> <img src="img/wave.png" alt=""> </figure>
+      </div>
+      <figure class="henrietta"> <img height="300" width="300" src="img//HenriettaLybeckSmall.jpg" alt="Henrietta Lybeck"> </figure>
+      <div class="container">
+        <h2>Jag heter <span>Henrietta Lybeck</span> och jag är en studerande Front End-utvecklare.</h2>
+      </div>
+    </section>
+
+
+    <section id="about-me">
+      <img class="emoji" src="img/1F50E_color.png"><h2>Vem är jag?</h2>
+
+        <p>Jag är en blivande Front End Developer som tar examen från <a href="https://medieinstitutet.se/">Medieinstitutet</a> i juni 2023. Jag lär mig HTML, CSS och Javascript. 
+          Jag är 28 år gammal och bor i Norrköping med min trebenta greyhound, Herbert.</p>
+
+        <p>Jag har varit datorintresserad sedan jag var fem år gammal och böjade knappa på familjens första dator, en Amiga med diskettläsare. 
+          Jag har alltid tyckt att det är kul att skapa själv; när jag spelade The Sims var det roligaste att
+          göra egna modifikationer och på de tidiga varianterna av sociala medier och bloggportaler var det roligaste att skapa mina egna designer med HTML och CSS.</p>
+
+        <p>Jag har jobbat några år inom systemförvaltning på en statlig myndighet, men längtade vidare till att koda själv och då var det webbutveckling som lockade mest. 
+          Jag är nördig när det kommer till användarvänlighet, tillgänglighet och sökoptimering - jag vill bygga hemsidor och applikationer som är lätta att använda för 
+          alla och som når fram till alla som innehållet berör.</p>
+    </section>
+
+    <section id="portfolio">
+      <img class="emoji" src="img/1F4BC_color.png"><h2>Portfolio</h2>
+        <div class="wrapper-1">
+          <article class="portfolio-slides">
+              <img src="img/portfolio-project-1.jpg" alt="Mitt projekt">
+              <div class="wrapper-2">
+                <h3>"Space Ventures - To The Moon"</h3>
+                <a href="">GitHub</a>
+              </div>
+          </article>
+
+          <article class="portfolio-slides">
+              <img src="img/project404.png" alt="Mitt projekt">
+              <div class="wrapper-2">
+                <h3>Exempelprojekt 2</h3>
+                <p>404: skills not found :-(</p>
+                <a href="">GitHub</a>
+              </div>
+          </article>
+
+          <article class="portfolio-slides">
+              <img src="img/project404.png" alt="Mitt projekt">
+              <div class="wrapper-2">
+                <h3>Exempelprojekt 3</h3>
+                <p>404: skills not found :-(</p>
+                <a href="">GitHub</a>
+              </div>
+          </article>
+
+          <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+         </div>
+
+    </section>
+    
+    <section id="work-experience">
+      <img class="emoji" src="img/wrench.png"><h2>Arbetslivserfarenhet</h2>
+
+        <article>
+          <h3>Sjöfartsverket</h3>
+            <p>2017 - Nu</p>
+            <p>Support, projektledning, testning och kravställning för interna system</p>
+        </article>
+
+        <article>
+          <h3>Eniro</h3>
+            <p>2014 - 2017</p>
+            <p>Sökspecialist, växeltelefonist och texttelefoniförmedlare</p>
+        </article>
+
+        <p>Referenser visas upp på begäran.</p>
+    </section>
+
+    <section id="contact">
+      <img class="emoji" src="img/envelope.png"><h2>Kontakt</h2>
+        <h3>E-post</h3>
+          <a href="mailto:henrietta.lybeck@gmail.com"> henrietta.lybeck@gmail.com</a>
+        <h3>Sociala Medier</h3>
+        <div>
+        <a href="https://github.com/hellohely" target=”_blank”><img class="socialmedia-icon" src="img/GitHub-Mark-Light-64px.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/henriettalybeck/" target=”_blank”><img class="socialmedia-icon" src="img/LI-In-Bug.png" alt="LinkedIn"></a>
+        <a href="https://codepen.io/hellohely" target=”_blank”><img class="socialmedia-icon" src="img/Button-White-Large.png" alt="CodePen"></a>
+        </div>
+             
+    </section>
+
+  </main>
+
+  <footer>
+  <p>All emojis designed by OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

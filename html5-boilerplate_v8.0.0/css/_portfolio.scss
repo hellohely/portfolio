@@ -1,0 +1,50 @@
+#portfolio {
+    .wrapper-1 {
+    position: relative;
+    }
+
+    button {
+        position: absolute;
+        top: 30%;
+        text-decoration:none;
+        padding: 15px;
+        text-align: center;
+        transition: all 0.15s;
+        cursor: pointer;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        border: none;
+        color: white;
+
+        &:hover {
+            color: $special-color;
+            transition: 0.2s ease-in;
+        }
+     }
+
+     .right-button {
+         right: 0px;
+     }
+
+     .left-button {
+         left: 0px;
+     }
+}
+
+.portfolio-slides {
+    display:none;
+    position: relative;
+
+    .wrapper-2 {
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: $special-color;
+    }
+}
+

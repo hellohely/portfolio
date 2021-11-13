@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Henrietta Lybeck, Front End Developer studying at Medieinstitutet
+
+# THANKS
+
+    Herbert the three-legged greyhound for always whining and licking my face when I'm on video calls
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
