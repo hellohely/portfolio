@@ -9,6 +9,21 @@ $(document).ready(function(){
 });
 });
 
+// Typewriter effect:
+function typeWriter(text, n) {
+  if (n < (text.length)) {
+    $('.typewriter').html(text.substring(0, n+1));
+    n++;
+    setTimeout(function() {
+      typeWriter(text, n)
+    }, 75);
+  }
+}
+
+$( document ).ready(function() {
+  var text = $('.typewriter').data('text');
+  typeWriter(text, 0);
+});
 
 // Portfolio slider:
 var slideIndex = 1;
@@ -28,3 +43,4 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
