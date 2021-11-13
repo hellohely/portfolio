@@ -5,6 +5,7 @@ html, body {
 /* Scroll-padding to make the anchor links correct*/
 html {
     scroll-padding-top: 80px;
+    scroll-behavior: smooth;
 }
 
 body {
