@@ -145,6 +145,21 @@ header {
 #contact {
     @include block-style-1;
 
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-top: 10px;
+        }
+
+        .send {
+            width: 75px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+
     h2 {
         display: inline-block;
     }
