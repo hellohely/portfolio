@@ -15,3 +15,14 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+$(document).ready(function(){
+  $('#hamburger-menu').click(function(){
+      $(this).toggleClass('open');
+  })
+  
+  $('.menu a').click(function(){
+    $('#hamburger-menu').toggleClass('open');
+});
+});
+
