@@ -1,24 +1,14 @@
 #hello {
-    height: 100vh;
-
-    div {
+    padding: 150px;
+    margin-left: 100px;
+    height: 60vh;
+    
+    .container {
         text-align: center;
-    }
-
-    div:nth-child(1) {
-        position: relative;
-        top: 100px;
-    }
-
-    div ~ div {
-        margin-top: 100px;
     }
 
     h1 {
         font-size: 4rem;
-        margin-bottom: 50px;
-        margin-top: 50px;
-       
     }
 
     .hand {
@@ -28,17 +18,16 @@
         }
     }
 
-    h2 {
-        font-size: 2rem;
-        margin-left: 50px;
+    .henrietta {
+        position: relative;
+        bottom: 100px;
+        img {
+            margin-right: 250px;
+        }
     }
 
-    .henrietta {
-        img {
-            position: static;
-            margin-right: 20%;
-            margin-left: 30px;
-        }
+    #typewriter {
+        font-size: 3rem;
     }
 }
 
