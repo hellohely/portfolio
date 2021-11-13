@@ -5,12 +5,14 @@
 
 @import "layout/_mobile";
 
-@import "layout/_desktop";
-
 @import "_menu";
 @import "_portfolio";
 
 
 @media screen and (min-width: 600px) {
     @import "layout/_tablet";
+}
+
+@media screen and (min-width: 992px) {
+    @import "layout/_desktop";
 }
