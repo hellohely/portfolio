@@ -159,7 +159,28 @@ header {
         width: 50px;
         height: auto;
         margin: 20px;
+            &:hover {
+            animation: bounce 1s infinite alternate;
+            -webkit-animation: bounce 0.4s infinite alternate;
+            }
     }
+
+    @keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
 
     a {
         color: $special-color;
