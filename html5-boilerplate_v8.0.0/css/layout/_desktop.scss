@@ -1,3 +1,9 @@
+.menu {
+    ul {
+        margin-top: 100px;
+    }
+}
+
 #hello {
     padding: 150px;
     margin-left: 100px;
@@ -31,8 +37,18 @@
     }
 }
 
-.menu {
-    ul {
-        margin-top: 100px;
+.scroll-down {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+    text-align: center;
+
+    img {
+        width: 80px;
+        height: auto;
+        animation: bounce 1s infinite alternate;
+            -webkit-animation: bounce 0.4s infinite alternate;
     }
 }
