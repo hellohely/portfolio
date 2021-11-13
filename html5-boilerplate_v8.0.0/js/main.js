@@ -10,20 +10,76 @@ $(document).ready(function(){
 });
 
 // Typewriter effect:
-function typeWriter(text, n) {
-  if (n < (text.length)) {
-    $('.typewriter').html(text.substring(0, n+1));
-    n++;
-    setTimeout(function() {
-      typeWriter(text, n)
-    }, 75);
-  }
+function setupTypewriter(t) {
+  var HTML = t.innerHTML;
+
+  t.innerHTML = "";
+
+  var cursorPosition = 0,
+      tag = "",
+      writingTag = false,
+      tagOpen = false,
+      typeSpeed = 100,
+    tempTypeSpeed = 0;
+
+  var type = function() {
+    
+      if (writingTag === true) {
+          tag += HTML[cursorPosition];
+      }
+
+      if (HTML[cursorPosition] === "<") {
+          tempTypeSpeed = 0;
+          if (tagOpen) {
+              tagOpen = false;
+              writingTag = true;
+          } else {
+              tag = "";
+              tagOpen = true;
+              writingTag = true;
+              tag += HTML[cursorPosition];
+          }
+      }
+      if (!writingTag && tagOpen) {
+          tag.innerHTML += HTML[cursorPosition];
+      }
+      if (!writingTag && !tagOpen) {
+          if (HTML[cursorPosition] === " ") {
+              tempTypeSpeed = 0;
+          }
+          else {
+              tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+          }
+          t.innerHTML += HTML[cursorPosition];
+      }
+      if (writingTag === true && HTML[cursorPosition] === ">") {
+          tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+          writingTag = false;
+          if (tagOpen) {
+              var newSpan = document.createElement("span");
+              t.appendChild(newSpan);
+              newSpan.innerHTML = tag;
+              tag = newSpan.firstChild;
+          }
+      }
+
+      cursorPosition += 1;
+      if (cursorPosition < HTML.length - 1) {
+          setTimeout(type, tempTypeSpeed);
+      }
+
+  };
+
+  return {
+      type: type
+  };
 }
 
-$( document ).ready(function() {
-  var text = $('.typewriter').data('text');
-  typeWriter(text, 0);
-});
+var typer = document.getElementById('typewriter');
+
+typewriter = setupTypewriter(typewriter);
+
+typewriter.type();
 
 // Portfolio slider:
 var slideIndex = 1;
