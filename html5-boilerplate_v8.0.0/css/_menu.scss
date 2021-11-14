@@ -93,6 +93,7 @@
 
 .menu ul {
   padding-inline-start: 0px;
+  margin-top: 20%;
 }
 
 .menu li {
@@ -106,7 +107,7 @@
   text-transform: uppercase;
   color: $font-color-1;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 #hamburger-menu.open ~ .menu {
