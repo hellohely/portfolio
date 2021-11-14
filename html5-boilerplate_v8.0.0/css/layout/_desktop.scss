@@ -5,14 +5,8 @@
 }
 
 #hello {
-    padding: 100px;
-    margin-left: 100px;
-    height: 60vh;
+    height: 85vh;
     position: static;
-    
-    .container {
-        text-align: center;
-    }
 
     h1 {
         font-size: 4rem;
@@ -26,8 +20,10 @@
     }
 
     .henrietta {
-        position: relative;
-        bottom: 100px;
+        img {
+            max-width: 250px;
+            
+        }
         
     }
 
@@ -41,12 +37,11 @@
     width: 100%;
     position: absolute;
     left: 0px;
-    bottom: 100px;
+    bottom: 50px;
     text-align: center;
 
     i {
-        width: 200px;
-        height: auto;
+        font-size: 6rem;
         color: $special-color;
             &:hover {  animation: bounce 1s infinite alternate;
                 -webkit-animation: bounce 0.4s infinite alternate;
