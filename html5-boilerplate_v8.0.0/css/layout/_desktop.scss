@@ -14,7 +14,15 @@ h3 {
 .menu {
     ul {
         margin-top: 100px;
+        a {
+            font-size: 3rem;
+        }
     }
+}
+
+.emoji {
+    height: 75px; 
+    top: 15px;
 }
 
 #hello {
