@@ -5,9 +5,10 @@
 }
 
 #hello {
-    padding: 150px;
+    padding: 100px;
     margin-left: 100px;
     height: 60vh;
+    position: static;
     
     .container {
         text-align: center;
@@ -40,14 +41,15 @@
     width: 100%;
     position: absolute;
     left: 0px;
-    bottom: 50px;
+    bottom: 100px;
     text-align: center;
 
-    img {
-        width: 80px;
+    i {
+        width: 200px;
         height: auto;
-        &:hover {  animation: bounce 1s infinite alternate;
-            -webkit-animation: bounce 0.4s infinite alternate;
-        }
+        color: $special-color;
+            &:hover {  animation: bounce 1s infinite alternate;
+                -webkit-animation: bounce 0.4s infinite alternate;
+            }
         }
 }
