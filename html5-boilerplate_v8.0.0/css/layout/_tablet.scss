@@ -1,12 +1,54 @@
+h2 {
+    font-size: 2rem;
+}
+
+#hello {
+
+    .container {
+        padding-left: 15%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .hand {
+        img {
+            height: 60px;
+        }
+    
+    }
+
+    .henrietta {
+        img {
+            margin-right: 10%;
+            margin-left: 30px;
+            margin-bottom: 100px;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+
+    #typewriter{
+		font-size: 2rem;
+    }
+}
+
 #about-me {
    padding-left: 20%;
    font-size: 1.2rem;
+ 
 
     p {
         max-width: 75%;
     }
 }
 
+#portfolio {
+    .emoji {
+        padding-left: 17%;
+    }
+}
 
 .portfolio-slides {
     display:none;
@@ -25,5 +67,21 @@
     img {
         width: 100%;
         height: auto;
+    }
+}
+
+#work-experience {
+    padding-left: 20%;
+}
+
+#contact {
+    padding-left: 20%;
+
+    form {
+        max-width: 75%;
+    }
+
+    div {
+        margin-right: 20%;
     }
 }

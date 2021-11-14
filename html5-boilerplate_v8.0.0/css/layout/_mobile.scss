@@ -98,15 +98,15 @@ header {
         img {
         border-radius: 50%;
         width: 35%;
-        max-width: 250px;
+        max-width: 200px;
         min-width: 125px;
         height: auto;
         float: right;
       
 
-        border: 2px solid white;
-        border-top-color: $special-color;
-        border-left-color: $special-color;
+        border: 2px solid $special-color;
+        border-top-color: $font-color-1;
+        border-left-color: $font-color-1;
         filter: drop-shadow(0 0 6px $special-color);
         }
     }
