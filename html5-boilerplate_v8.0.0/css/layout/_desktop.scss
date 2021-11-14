@@ -7,9 +7,15 @@
 #hello {
     height: 85vh;
     position: static;
+    padding-right: 10%;
 
     h1 {
         font-size: 4rem;
+    }
+
+    .container {
+        position: relative;
+        top: 100px;
     }
 
     .hand {
@@ -22,9 +28,8 @@
     .henrietta {
         img {
             max-width: 250px;
-            
+            top: 0px;
         }
-        
     }
 
     #typewriter {
@@ -37,7 +42,7 @@
     width: 100%;
     position: absolute;
     left: 0px;
-    bottom: 50px;
+    bottom: 30px;
     text-align: center;
 
     i {
