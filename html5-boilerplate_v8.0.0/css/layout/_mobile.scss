@@ -199,6 +199,13 @@ header {
             width: 75px;
             cursor: pointer;
             margin-top: 10px;
+            border: none;
+            background-color: $background-color-2;
+            padding: 10px;
+
+            &:hover {
+                background-color: $special-color;
+            }
         }
     }
 
