@@ -1,18 +1,20 @@
 // Import other sass-files //
-
 @import "_variables.scss";
 @import "_mixins.scss";
-
-@import "layout/_mobile";
 
 @import "_menu";
 @import "_portfolio";
 
 
+/* Mobile/base layout*/
+@import "layout/_mobile";
+
+/* Tablet layout*/
 @media screen and (min-width: 600px) {
     @import "layout/_tablet";
 }
 
+/* Desktop layout*/
 @media screen and (min-width: 1200px) {
     @import "layout/_desktop";
 }
